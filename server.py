@@ -23,5 +23,9 @@ def learn_step2():
 def learn_step2_1():
     return render_template('learn_step2_1.html')
 
+@app.route('/learn/3')
+def learn_step3():
+    return render_template('learn_step3.html')
+
 if __name__ == '__main__':
    app.run(debug = True)

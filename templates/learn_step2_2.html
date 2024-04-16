@@ -1,4 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="row mb-4">
+    <h4 class="col">Part 2: Lay your tent onto the tarp</h4>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="{{ url_for('static', filename='image/part2_7.png') }}" alt="Lay tent onto the tarp" class="img-fluid">
+    </div>
+
+    <div class="col-md-6">
+        <div class="border-start border-5 ms-3 ps-3">
+            <h4>Put the bottom side of the tent on the tarp</h4>
+            <h4>Decide the direction of windows and door of the tent</h4>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col text-start">
+        <a href="{{ url_for('learn_step2_1') }}" class="btn btn-outline-dark">Previous Step</a>
+    </div>
+    <div class="col text-end">
+        <a href="{{ url_for('learn_step2_3') }}" class="btn btn-outline-dark">Next Step</a>
+    </div>
+</div>
 
 {% endblock %}

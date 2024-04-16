@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Tent Techniques</h2>
+            <div class="video-container">
+                The video can be embedded here
+                <!-- <img src="{{ url_for('static', filename='path_to_your_video_thumbnail.jpg') }}" alt="Video here"> -->
+                <!-- Placeholder for video, replace with actual video embed code -->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">Slide the pole through flaps on the tent's surface</li>
+                <li class="list-group-item">Attach them to plastic clips along the top of the tent
+                    <ul>
+                        <li>Ensure two main poles cross each other in an X formation to create the basic frame</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // You can include any additional JavaScript or jQuery related to this page
+</script>
+{% endblock %}

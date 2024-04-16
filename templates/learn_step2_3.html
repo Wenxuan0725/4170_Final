@@ -1,4 +1,32 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="row mb-4">
+    <h4 class="col">Part 3: Connect your tent poles</h4>
+</div>
 
+<div class="row">
+    <div class="col-md-6">
+        <img src="{{ url_for('static', filename='image/part2_3.jpg') }}" alt="Lay tent onto the tarp" class="img-fluid">
+    </div>
+
+    <div class="col-md-6">
+        <div class="border-start border-5 ms-3 ps-3">
+            <h4>Assemble the tent poles</h4>
+            <ul>
+                <li>Stretching and clicking poles into place</li>
+                <li>If they're numbered, match the numbers to assemble each pole correctly</li>
+            </ul>
+            <h4>Fit the ends of each pole into the eyelets at the tent's corners</h4>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col text-start">
+        <a href="{{ url_for('learn_step2_2') }}" class="btn btn-outline-dark">Previous Step</a>
+    </div>
+    <div class="col text-end">
+        <a href="{{ url_for('learn_step2_4') }}" class="btn btn-outline-dark">Next Step</a>
+    </div>
+</div>
 {% endblock %}

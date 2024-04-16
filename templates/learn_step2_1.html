@@ -1,4 +1,31 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="row mb-4">
+    <h4 class="col">Part 1: Lay a tarp</h4>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="{{ url_for('static', filename='image/part2_1.png') }}" alt="Lay out the tarp" class="img-fluid">
+    </div>
+
+    <div class="col-md-6">
+        <div class="border-start border-5 ms-3 ps-3">
+            <h4>Place a plastic or vinyl tarp on the ground</h4>
+            <p>A barrier between the tent and the soil to prevent moisture from seeping in.</p>
+            <h4>Fold the tarp to ensure it's slightly smaller than the tent's footprint</h4>
+            <p>Prevents any part of the tarp from extending beyond the tent's edges, avoiding water accumulation underneath during rain.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col text-start">
+        <a href="{{ url_for('learn_step2') }}" class="btn btn-outline-dark">Previous Step</a>
+    </div>
+    <div class="col text-end">
+        <a href="{{ url_for('learn_step2_2') }}" class="btn btn-outline-dark">Next Step</a>
+    </div>
+</div>
 
 {% endblock %}

@@ -23,6 +23,18 @@ def learn_step2():
 def learn_step2_1():
     return render_template('learn_step2_1.html')
 
+@app.route('/learn/2.2')
+def learn_step2_2():
+    return render_template('learn_step2_2.html')
+
+@app.route('/learn/2.3')
+def learn_step2_3():
+    return render_template('learn_step2_3.html')
+
+@app.route('/learn/2.4')
+def learn_step2_4():
+    return render_template('learn_step2_4.html')
+
 @app.route('/learn/3')
 def learn_step3():
     return render_template('learn_step3.html')

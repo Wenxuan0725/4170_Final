@@ -8,3 +8,53 @@ img.centered-image {
     margin-right: auto;
     width: 50%; 
 }
+
+.part {
+    cursor: pointer;
+}
+.part img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+.part:hover img {
+    transform: scale(1.05); /* Slightly scale up images on hover */
+}
+.part-text {
+    text-align: center;
+    margin-top: 10px;
+}
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+.fixed-size-image {
+    width: 300px;
+    height: 200px;
+}
+.fixed-size-image-small {
+    width: 150px;
+    height: 100px;
+}
+.draggable {
+    cursor: grab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-top: 20px;
+}
+.instruction-container {
+    height: 100px;
+    position: relative;
+}
+.instruction-image {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}

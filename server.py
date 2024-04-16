@@ -11,5 +11,17 @@ def welcome():
 def learn():
     return render_template('learn.html')
 
+@app.route('/learn/1')
+def learn_step1():
+    return render_template('learn_step1.html')
+
+@app.route('/learn/2')
+def learn_step2():
+    return render_template('learn_step2.html')
+
+@app.route('/learn/2.1')
+def learn_step2_1():
+    return render_template('learn_step2_1.html')
+
 if __name__ == '__main__':
    app.run(debug = True)

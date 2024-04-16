@@ -1,4 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class = "row">
+    <div class="col part" onclick="window.location.href='/learn/1';">
+        <div class="part-text"><h4>Part 1: Find a good spot for tent</h4></div>
+        <img src="{{ url_for('static', filename='/image/part1.png') }}" alt="Find a good spot for tent">
+    </div>
 
+    <div class="col part" onclick="window.location.href='/learn/2';">
+        <div class="part-text"><h4>Part 2: Set up a tent</h4></div>
+        <img src="{{ url_for('static', filename='/image/part2.png') }}" alt="Set up a tent">
+    </div>
+
+    <div class="col part" onclick="window.location.href='/learn/3';">
+        <div class="part-text"><h4>Part 3: Tent tips for different weather</h4></div>
+        <img src="{{ url_for('static', filename='/image/part3.png') }}" alt="Tent tips for different weather">
+    </div>
+</div>
+<div class="row navigation">
+    <div class="col">
+      <button class="btn btn-outline-dark" onclick="window.location.href='/learn/1';">Start with Part 1!</button>
+    </div>
+  </div>
 {% endblock %}

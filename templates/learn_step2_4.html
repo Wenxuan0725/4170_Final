@@ -1,27 +1,37 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <h2>Tent Techniques</h2>
-            <div class="video-container">
-                <!-- The video is embedded here -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/H-TcPlcKXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p>Step 4: Insert into corresponding flaps in the tent</p>
-        </div>
-        <div class="col-md-4">
-            <ul class="list-group">
-                <li class="list-group-item">Slide the pole through flaps on the tent's surface</li>
-                <li class="list-group-item">Attach them to plastic clips along the top of the tent
-                    <ul>
-                        <li>Ensure two main poles cross each other in an X formation to create the basic frame</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<div class="row mb-4">
+  <h4 class="col">Step 4: Insert into corresponding flaps in the tent</h4>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/H-TcPlc4KXA?si=u36DU8xZxKsg3lJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+  </div>
+
+  <div class="col-md-5">
+      <div class="border-start border-5 ms-3 ps-3">
+        <ul class="list-group">
+          <li class="list-group-item">Slide the pole through flaps on the tent's surface</li>
+          <li class="list-group-item">Attach them to plastic clips along the top of the tent
+              <ul>
+                  <li>Ensure two main poles cross each other in an X formation to create the basic frame</li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col text-start">
+      <a href="{{ url_for('learn_step2_3') }}" class="btn btn-outline-dark">Previous Step</a>
+  </div>
+  <div class="col text-end">
+      <a href="{{ url_for('learn_step2_5') }}" class="btn btn-outline-dark">Next Step</a>
+  </div>
 </div>
 {% endblock %}
 

@@ -1,70 +1,35 @@
 {% extends "layout.html" %}
-{% block content %}
-<div class = "row">
-    <div class = "col">
-        <h4>Part 1: Find a good spot for tent</h4>
-        <ul>
-            <li>Flat ground</li>
-            <li>Free of sticks & stumps</li>
-            <li>Free of dead trees, they are about to fall!</li>
-        </ul>
-    </div>
-    <div class="col-md-4 instruction-container">
-        <div>Drag the tent to an appropriate place!</div>
-        <div></div>
-        <img src="{{ url_for('static', filename='image/part1_4.png') }}" alt="Draggable tent" class="draggable instruction-image fixed-size-image-small" id="draggable-tent">
-    </div>
 
-    <div class="row">
-        <div class="col image-container">
-            <img class = "fixed-size-image" src="{{ url_for('static', filename='image/part1_1.jpg') }}" alt="Desert">
-          </div>
-          <div class="col image-container">
-            <img class = "fixed-size-image" src="{{ url_for('static', filename='image/part1_2.jpg') }}" alt="Mountains">
-          </div>
-          <div class="col image-container droppable" id="correct-drop">
-            <img class = "fixed-size-image" src="{{ url_for('static', filename='image/part1_3.jpg') }}" alt="Park">
-          </div>
-    </div>
+{% block content %}
+<div class="row mb-4">
+  <h4 class="col">Step 5: Raise the tent and stake the tent into ground</h4>
 </div>
-<div class="row mt-5">
-    <div class="col text-center">
-        <button class="btn btn-outline-dark" onclick= "window.location.href='/learn/2';">Next Part</button>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <img src="{{ url_for('static', filename='image/part2_5.jpg') }}" alt="Lay out the tarp" class="img-fluid">
+  </div>
+
+  <div class="col-md-6">
+    <div class="border-start border-5 ms-3 ps-3">
+        <h4>Pull the tent corners apart to square the tent</h4>
+        <p>Make sure the poles are secure and untangled</p>
+        <h4>Use metal tent stakes to fit through the flaps </h4>
+        <h4>Push stakes into the ground</h4>
     </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col text-start">
+      <a href="{{ url_for('learn_step2_4') }}" class="btn btn-outline-dark">Previous Step</a>
+  </div>
+  <div class="col text-end">
+      <a href="{{ url_for('learn_step2_6') }}" class="btn btn-outline-dark">Next Step</a>
+  </div>
 </div>
 {% endblock %}
 
 {% block scripts %}
-<script>
-    $(function() {
-      // Store the original position of the draggable tent
-      var originalOffset = $('#draggable-tent').offset();
-
-    $('#draggable-tent').draggable({
-        cursor: "move",
-        helper: 'clone',
-        start: function(event, ui) {
-            // Store originalOffset each time the drag starts
-            originalOffset = $(this).offset();
-        },
-        revert: function(dropped) {
-            // Only revert if the drag was not successful
-            return !dropped;
-        }
-    });
-            
-      $('#correct-drop').droppable({
-        accept: '#draggable-tent',
-        drop: function(event, ui) {
-          var dropped = ui.draggable;
-          var droppedOn = $(this);
-          $(dropped).detach().css({top: 130,left: 90}).appendTo(droppedOn);
-          // Disable dragging after it's been dropped
-          $(dropped).draggable('disable');
-        }
-      });
-    
-    });
-</script>
-    
+<!-- Scripts can remain the same as previously provided -->
 {% endblock %}

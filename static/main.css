@@ -125,6 +125,17 @@ img.centered-image {
     margin-bottom: 40px;
 }
 
+.quiz-question-section-order {
+    background-color: aliceblue;
+    width: 100%;
+    border: solid rgb(205, 200, 200) 1px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
 .quiz-question {
     margin-top: 10px;
 }
@@ -210,4 +221,88 @@ img.centered-image {
 .wrong-picture-choice:hover {
     transition: transform 0.2s;
     transform: scale(1.05); /* Slightly scale up images on hover */
+}
+
+.steps-container, .order-boxes {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.quiz_draggable {
+    cursor: move;
+    margin-right: 12px; 
+    width: 160px; 
+    height: 120px;
+}
+  
+.quiz_droppable {
+    width: 164px;
+    height: 124px;
+    border: 2px dashed #ccc; 
+    margin-right: 8px;
+    margin-top: 12px;
+    display: inline-block; 
+}
+
+.incorrect {
+    border: 2px solid rgb(247, 74, 74); 
+}
+
+.correct {
+    border: 2px solid rgb(67, 151, 222) ; 
+}
+
+.correct_order {
+    margin-right: 12px; 
+    width: 160px; 
+    height: 120px;
+}
+
+.steps-container-match, .order-boxes-match, .steps-descriptions {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.quiz_match_spic {
+    margin-right: 24px; 
+    width: 320px; 
+    height: 240px;
+}
+
+.quiz_droppable_match {
+    /* Style your droppable boxes here */
+    width: 324px;
+    height: 94px; 
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+.quiz_draggable_match {
+    text-align: center;
+    width: 320px;
+    height: 90px;
+
+    margin-right: 24px;
+    margin-bottom: 12px;
+
+    cursor: grab;
+    border: solid 1px rgb(184, 182, 182);
+    border-radius: 10px;
+    font-size: 19px;
+
+}
+
+.incorrect_match {
+    border: 2px solid rgb(247, 74, 74); 
+}
+
+.correct_match {
+    border: 2px solid rgb(67, 151, 222) ; 
 }

@@ -59,33 +59,41 @@ def learn_step3_2():
 def quiz():
     return render_template('quiz_start.html')
 
-@app.route('/q2')
-def q2():
-    return render_template('q2.html')
+@app.route('/quiz/1')
+def quiz_1():
+    return render_template('quiz_1.html')
 
-@app.route('/q3')
-def q3():
-    return render_template('q3.html')
+@app.route('/quiz/2')
+def quiz_2():
+    return render_template('quiz_2.html')
 
-@app.route('/q4')
-def q4():
-    return render_template('q4.html')
+@app.route('/quiz/3')
+def quiz_3():
+    return render_template('quiz_3.html')
 
-@app.route('/q5')
-def q5():
-    return render_template('q5.html')
+@app.route('/quiz/4')
+def quiz_4():
+    return render_template('quiz_4.html')
 
-@app.route('/q6')
-def q6():
-    return render_template('q6.html')
+@app.route('/quiz/5')
+def quiz_5():
+    return render_template('quiz_5.html')
 
-@app.route('/q7')
-def q7():
-    return render_template('q7.html')
+@app.route('/quiz/6')
+def quiz_6():
+    return render_template('quiz_6.html')
 
-@app.route('/q8')
-def q8():
-    return render_template('q8.html')
+@app.route('/quiz/7')
+def quiz_7():
+    return render_template('quiz_7.html')
+
+@app.route('/quiz/8')
+def quiz_8():
+    return render_template('quiz_8.html')
+
+@app.route('/quiz/end')
+def quiz_end():
+    return render_template('quiz_end.html')
 
 if __name__ == '__main__':
    app.run(debug = True)

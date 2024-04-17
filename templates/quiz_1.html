@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'drag_drop_question.js') }}"></script>
+
+<div class="quiz-question-section-order">
+    <strong>1 / 8</strong>
+    <h4 class="quiz-question">Order the steps to pitch a tent: (30pt)</h4>
+    <div id="steps-to-order" class="steps-container">
+        <!-- Add your draggable steps here -->
+        <img id="step4" src="{{ url_for('static', filename='image/part2_4.jpg') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+        <img id="step2" src="{{ url_for('static', filename='image/part2_2.png') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+        <img id="step6" src="{{ url_for('static', filename='image/part2_6.jpg') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+        <img id="step5" src="{{ url_for('static', filename='image/part2_5.jpg') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+        <img id="step1" src="{{ url_for('static', filename='image/part2_1.png') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+        <img id="step3" src="{{ url_for('static', filename='image/part2_3.jpg') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">
+    </div>
+    <div class="order-boxes">
+        <!-- Add your droppable boxes here -->
+        <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+        <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+        <div id="box3" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+        <div id="box4" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+        <div id="box5" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+        <div id="box6" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable"></div>
+    </div>
+    <div class="question-explanation">
+      Correct order is as follows:
+      <div id="steps-to-order" class="steps-container">
+        <!-- Add your draggable steps here -->
+        <img id="step1" src="{{ url_for('static', filename='image/part2_1.png') }}" class="correct_order">
+        <img id="step2" src="{{ url_for('static', filename='image/part2_2.png') }}" class="correct_order">
+        <img id="step3" src="{{ url_for('static', filename='image/part2_3.jpg') }}" class="correct_order">
+        <img id="step4" src="{{ url_for('static', filename='image/part2_4.jpg') }}" class="correct_order">
+        <img id="step5" src="{{ url_for('static', filename='image/part2_5.jpg') }}" class="correct_order">
+        <img id="step6" src="{{ url_for('static', filename='image/part2_6.jpg') }}" class="correct_order">
+      </div>
+    </div>
+    
+    <div class="next-question-section">
+        <a href="{{ url_for('quiz_2') }}" class="btn btn-outline-dark next-question-button">Next Question</a>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

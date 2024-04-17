@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'drag_drop_question_match.js') }}"></script>
+
+<div class="quiz-question-section-order">
+    <strong>8 / 8</strong>
+    <h4 class="quiz-question">Match the steps (10pt)</h4>
+    <!-- Draggable items -->
+    <div id="steps-to-order-match" class="steps-container-match">
+        <!-- Add your draggable steps here -->
+        <img id="step2" src="{{ url_for('static', filename='image/part2_2.png') }}" class="quiz_match_spic">
+        <img id="step5" src="{{ url_for('static', filename='image/part2_5.jpg') }}" class="quiz_match_spic">
+        <img id="step3" src="{{ url_for('static', filename='image/part2_3.jpg') }}" class="quiz_match_spic">
+    </div>
+    
+    <!-- Droppable slots -->
+    <div class="order-boxes-match">
+        <!-- Add your droppable boxes here -->
+        <div id="box2_match" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable_match"></div>
+        <div id="box5_match" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable_match"></div>
+        <div id="box3_match" ondrop="drop(event)" ondragover="allowDrop(event)" class="quiz_droppable_match"></div>
+    </div>
+    
+    <!-- Step descriptions (options) -->
+    <div class="steps-descriptions">
+        <div id="step5_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 5: Raise the tent and <br> stake the tent into ground</div>
+        <div id="step3_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 3: Lay the tent onto the tarp</div>
+        <div id="step2_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 2: Lay out the footprint</div>
+    </div>
+    
+
+    <div class="question-explanation">
+      Correct matches are as follows:
+      <div class="steps-descriptions">
+        <!-- Add your draggable steps here -->
+        <div id="step2_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 2: Lay out the footprint</div>
+        <div id="step5_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 5: Raise the tent and <br> stake the tent into ground</div>
+        <div id="step3_match" draggable="true" ondragstart="drag(event)" class="quiz_draggable_match">Step 3: Lay the tent onto the tarp</div>
+    </div>
+    </div>
+    
+    <div class="next-question-section">
+        <a href="{{ url_for('quiz_end') }}" class="btn btn-outline-dark next-question-button">See Result</a>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
     $('.correct-choice').on('click', function(event) {
         $('.correct-choice').addClass('show-correct-choice');

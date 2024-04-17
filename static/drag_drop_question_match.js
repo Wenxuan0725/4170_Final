@@ -6,6 +6,7 @@ $(document).ready(function() {
     };
 
     var answersChecked = false;
+    var q8_score = 10
 
     // Allow drop
     $('.quiz_droppable_match').on('dragover', function(event) {
@@ -33,6 +34,10 @@ $(document).ready(function() {
             // Check if all items have been placed
             if ($('.quiz_droppable_match').find('.quiz_draggable_match').length === Object.keys(correctMappings).length) {
                 checkAnswers();
+
+                var questionSection = $(this).closest('.quiz-question-section-order');
+                var currentQuestionId = questionSection.data('question-id');
+                submitAnswer(currentQuestionId, q8_score);
             }
         }
     });
@@ -47,6 +52,7 @@ $(document).ready(function() {
             if (correctMappings[childId] !== $this.attr('id')) {
                 wrongAnswer = true;
                 $this.addClass('incorrect_match');
+                q8_score = 0
             } else {
                 $this.addClass('correct_match');
             }
@@ -58,6 +64,22 @@ $(document).ready(function() {
             $('.next-question-button').show();
         // Prevent further drops after checking
         answersChecked = true;
+    }
+
+
+    function submitAnswer(questionId, answer_score) {
+        $.ajax({
+            url: "/submit_answer/" + questionId,
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ answer_score: answer_score }),
+            success: function(response) {
+                console.log('Score updated to: ' + response.score);
+            },
+            error: function(xhr, status, error) {
+                console.error("Error submitting answer: " + error);
+            }
+        });
     }
 
 

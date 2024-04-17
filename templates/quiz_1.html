@@ -3,8 +3,11 @@
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'drag_drop_question.js') }}"></script>
 
-<div class="quiz-question-section-order">
-    <strong>1 / 8</strong>
+<div class="quiz-question-section-order" data-question-id="1">
+  <div class="header-section">
+    <span class="question-number">1 / 8</span>
+    <span class="score-display">Score: {{ current_score }}/100</span>
+  </div>
     <h4 class="quiz-question">Order the steps to pitch a tent: (30pt)</h4>
     <div id="steps-to-order" class="steps-container">
         <!-- Add your draggable steps here -->

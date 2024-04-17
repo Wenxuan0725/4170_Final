@@ -6,8 +6,11 @@
     
 </script>
 
-<div class="quiz-question-section">
-    <strong>5 / 8</strong>
+<div class="quiz-question-section" data-question-id="5">
+    <div class="header-section">
+        <span class="question-number">5 / 8</span>
+        <span class="score-display">Score: {{ current_score }}/100</span>
+      </div>
     <h4 class="quiz-question">What is the method for inserting tent poles to form the basic frame of the tent? (10pt)</h4>
     <div class="quiz-image">
         <img src="{{ url_for('static', filename='image/question4-5.jpg') }}" alt="Image for question 5">

@@ -313,3 +313,22 @@ img.centered-image {
     background-color:  rgb(67, 151, 222) ; 
     border: 2px solid rgb(67, 151, 222) ; 
 }
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.question-number {
+    float: left; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.score-display {
+    float: right; 
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -3,8 +3,11 @@
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'drag_drop_question_match.js') }}"></script>
 
-<div class="quiz-question-section-order">
-    <strong>8 / 8</strong>
+<div class="quiz-question-section-order" data-question-id="8">
+    <div class="header-section">
+        <span class="question-number">8 / 8</span>
+        <span class="score-display">Score: {{ current_score }}/100</span>
+      </div>
     <h4 class="quiz-question">Match the steps (10pt)</h4>
     <!-- Draggable items -->
     <div id="steps-to-order-match" class="steps-container-match">

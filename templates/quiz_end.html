@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="quiz-start-section">
-    <h1 class="quiz-title">Tent Building Quiz!</h1>
-    <p class="quiz-introduction">This quiz consists of <strong>eight questions</strong> and totals <strong>100 points</strong>. It includes multiple choice, drag-and-drop, and order steps questions. The goal is to test your knowledge of different steps in building a tent.<br><br>If you are ready, feel free to start!</p>
-    
+    <h1 class="quiz-title">Final Score: {{ score }}/100</h1>
+    <p class="quiz-introduction">{{ message }}</p>
 </div>
 {% endblock %}

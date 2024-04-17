@@ -6,8 +6,11 @@
     
 </script>
 
-<div class="quiz-question-section">
-    <strong>7 / 8</strong>
+<div class="quiz-question-section" data-question-id="7">
+    <div class="header-section">
+        <span class="question-number">7 / 8</span>
+        <span class="score-display">Score: {{ current_score }}/100</span>
+      </div>
     <h4 class="quiz-question">When selecting a tent for camping in a rainy area, what feature is most important? (10pt)</h4>
     <div class="quiz-image">
         <img src="{{ url_for('static', filename='image/question7.png') }}" alt="Image for question 7">

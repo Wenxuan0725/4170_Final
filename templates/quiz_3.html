@@ -6,8 +6,11 @@
     
 </script>
 
-<div class="quiz-question-section">
-    <strong>3 / 8</strong>
+<div class="quiz-question-section" data-question-id="3">
+    <div class="header-section">
+        <span class="question-number">3 / 8</span>
+        <span class="score-display">Score: {{ current_score }}/100</span>
+      </div>
     <h4 class="quiz-question">How should the trap be sized and arranged in relation to the tent's footprint? (10pt)</h4>
     <div class="quiz-image">
         <img src="{{ url_for('static', filename='image/question3.jpg') }}" alt="Image for question 3">

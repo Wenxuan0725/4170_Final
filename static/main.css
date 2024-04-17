@@ -238,6 +238,11 @@ img.centered-image {
     padding-right: 8px;
     padding-top: 8px;
 }
+
+.quiz_draggable:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05); /* Slightly scale up images on hover */
+}
   
 .quiz_droppable {
     width: 164px;
@@ -302,6 +307,11 @@ img.centered-image {
     border-radius: 10px;
     font-size: 19px;
 
+}
+
+.quiz_draggable_match:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05); /* Slightly scale up images on hover */
 }
 
 .incorrect_match {

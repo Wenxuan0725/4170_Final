@@ -231,9 +231,12 @@ img.centered-image {
 
 .quiz_draggable {
     cursor: move;
+    margin-left: 8px; 
     margin-right: 12px; 
-    width: 160px; 
-    height: 120px;
+    width: 152px; 
+    height: 110px;
+    padding-right: 8px;
+    padding-top: 8px;
 }
   
 .quiz_droppable {
@@ -246,10 +249,12 @@ img.centered-image {
 }
 
 .incorrect {
+    background-color:  rgb(247, 74, 74);
     border: 2px solid rgb(247, 74, 74); 
 }
 
 .correct {
+    background-color:  rgb(67, 151, 222) ; 
     border: 2px solid rgb(67, 151, 222) ; 
 }
 
@@ -300,9 +305,11 @@ img.centered-image {
 }
 
 .incorrect_match {
+    background-color:  rgb(247, 74, 74);
     border: 2px solid rgb(247, 74, 74); 
 }
 
 .correct_match {
+    background-color:  rgb(67, 151, 222) ; 
     border: 2px solid rgb(67, 151, 222) ; 
 }

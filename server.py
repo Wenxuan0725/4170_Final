@@ -43,11 +43,17 @@ def learn_step2_5():
 def learn_step2_6():
     return render_template('learn_step2_6.html')
 
-
-
 @app.route('/learn/3')
 def learn_step3():
     return render_template('learn_step3.html')
+
+@app.route('/learn/3.1')
+def learn_step3_1():
+    return render_template('learn_step3_1.html')
+
+@app.route('/learn/3.2')
+def learn_step3_2():
+    return render_template('learn_step3_2.html')
 
 if __name__ == '__main__':
    app.run(debug = True)

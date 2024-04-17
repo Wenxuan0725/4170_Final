@@ -58,3 +58,34 @@ img.centered-image {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.tips{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.tip-mid{
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.top-mg{
+    margin-top: 30px;
+}
+
+.custom-list {
+    font-size: 18px;
+    line-height: 1.6; /* Adjust line spacing as needed */
+}
+
+.custom-list-item {
+    text-indent: -1em; /* Adjust as needed */
+    padding-left: 1em; /* Adjust as needed */
+    margin-bottom: 0.5em; /* Adjust space between items as needed */
+}
+

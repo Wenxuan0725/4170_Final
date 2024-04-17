@@ -1,4 +1,33 @@
 {% extends "layout.html" %}
-{% block content %}
 
+{% block content %}
+<div class="container my-3">
+    <div class="row mb-4 text-center">
+        <h4 class="col">Part 3: Tent tips for different weather</h4>
+    </div>
+    
+    <div class="row g-3">
+        <div class="col-md-6 tip-mid">
+            <a href="{{ url_for('learn_step3_1') }}">
+                <img src="{{ url_for('static', filename='image/part3_1.jpg') }}" alt="Lay a tarp" class="img-fluid tips">
+            </a>
+                <p>Windy conditions</p>
+        </div>
+        <div class="col-md-6 tip-mid">
+            <a href="{{ url_for('learn_step3_2') }}">
+                <img src="{{ url_for('static', filename='image/part3_2.jpg') }}" alt="Lay your tent onto the tarp" class="img-fluid tips">
+            </a>
+            <p>Rainy days</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col text-start">
+            <button class="btn btn-outline-dark" onclick= "window.location.href='/learn/2';">Previous Part</button>
+        </div>
+        <div class="col text-end">
+            <button class="btn btn-outline-dark" onclick= "window.location.href='/quiz/1';">Next Part</button>
+        </div>
+    </div>
+</div>
 {% endblock %}

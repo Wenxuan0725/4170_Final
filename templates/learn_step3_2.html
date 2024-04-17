@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row top-mg">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <img src="{{ url_for('static', filename='image/part3_3.jpg') }}" alt="Lay out the tarp" class="img-fluid">
+  </div>
+
+  <div class="col-md-6">
+    <div class="border-start border-5 ms-3 ps-3">
+      <h3>Rainy days</h3>
+      <div class="custom-list">
+        <div class="custom-list-item">• Don't forget your groundsheet</div>
+        <div class="custom-list-item">• Get your fire going before it starts raining if you can.</div>
+        <div class="custom-list-item">• Set up your tent on a slight angle so the water flows by</div>
+        <div class="custom-list-item">• Use quality rain gear</div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col text-start">
+      <a href="{{ url_for('learn_step3') }}" class="btn btn-outline-dark">Back to tips</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Scripts can remain the same as previously provided -->
+{% endblock %}

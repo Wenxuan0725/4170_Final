@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row top-mg">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <img src="{{ url_for('static', filename='image/part3.png') }}" alt="Lay out the tarp" class="img-fluid">
+  </div>
+
+  <div class="col-md-6">
+    <div class="border-start border-5 ms-3 ps-3">
+      <h3>Windy conditions</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Dome style tents are more aerodynamic than traditional</li>
+        <li class="list-group-item">Canvas and nylon are appropriate tent fabrics</li>
+        <li class="list-group-item">More poles used and the more times poles intersect!</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col text-start">
+      <a href="{{ url_for('learn_step3') }}" class="btn btn-outline-dark">Back to tips</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Scripts can remain the same as previously provided -->
+{% endblock %}

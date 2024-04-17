@@ -89,3 +89,125 @@ img.centered-image {
     margin-bottom: 0.5em; /* Adjust space between items as needed */
 }
 
+.quiz-start-section {
+    background-color: aliceblue;
+    width: 53%;
+    border: solid rgb(205, 200, 200) 1px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.quiz-title {
+    text-align: center;
+}
+
+.quiz-introduction {
+    margin-top: 20px;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.quiz-start-button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-question-section {
+    background-color: aliceblue;
+    width: 53%;
+    border: solid rgb(205, 200, 200) 1px;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.quiz-question {
+    margin-top: 10px;
+}
+
+.quiz-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.choice {
+    margin-top: 10px;
+    border: solid 1px rgb(184, 182, 182);
+    border-radius: 10px;
+    font-size: 19px;
+    padding: 15px;
+}
+
+.correct-choice:hover {
+    background-color: #cfc8f0;
+    cursor: pointer;
+}
+
+.wrong-choice:hover {
+    background-color: #cfc8f0;
+    cursor: pointer;
+}
+
+.next-question-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.next-question-button {
+    display: none;
+}
+
+.show-correct-choice {
+    background-color: rgb(67, 151, 222) !important;
+}
+
+.show-wrong-choice {
+    background-color: rgb(247, 74, 74) !important;
+}
+
+.question-explanation {
+    font-size: 19px;
+    margin-top: 30px;
+    display: none;
+}
+
+.picture-multiple-choice-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.picture-choice {
+    flex-grow: 1;
+    width: 49%;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.picture-choice img {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    margin-bottom: 10px;
+}
+
+.q6 img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 10px;
+}
+
+.correct-picture-choice:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05); /* Slightly scale up images on hover */
+}
+.wrong-picture-choice:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05); /* Slightly scale up images on hover */
+}

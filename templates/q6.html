@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'multiple_choice_page.js') }}"></script>
+<script>
+    
+</script>
+
+<div class="quiz-question-section">
+    <strong>6 / 10</strong>
+    <h4 class="quiz-question">Which tool do we need when staking a tent in a rocky or hard ground? (10pt)</h4>
+    <div class="picture-multiple-choice-section">
+        <div class="picture-choice q6 wrong-picture-choice">
+            <img src="{{ url_for('static', filename='image/question6-A.jpg') }}" alt="Image for A choice in question 6">
+            <div>A</div>
+        </div>
+        <div class="picture-choice q6 correct-picture-choice">
+            <img src="{{ url_for('static', filename='image/question6-B.jpeg') }}" alt="Image for B choice in question 6">
+            <div>B</div>
+        </div>
+        <div class="picture-choice q6 wrong-picture-choice">
+            <img src="{{ url_for('static', filename='image/question6-C.jpeg') }}" alt="Image for C choice in question 6">
+            <div>C</div>
+        </div>
+        <div class="picture-choice q6 wrong-picture-choice">
+            <img src="{{ url_for('static', filename='image/question6-D.jpeg') }}" alt="Image for D choice in question 6">
+            <div>D</div>
+        </div>
+    </div>
+    <div class="question-explanation">
+        Fold the tarp into the relative shape of the tent, but slightly smaller. You don't want any part of the tarp to hang out beyond the edge of the tent, otherwise it'll collect water underneath in case it rains. Thus C is correct.
+    </div>
+    <div class="next-question-section">
+        <a href="{{ url_for('q7') }}" class="btn btn-outline-dark next-question-button">Next Question</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'multiple_choice_page.js') }}"></script>
+<script>
+    
+</script>
+
+<div class="quiz-question-section">
+    <strong>2 / 10</strong>
+    <h4 class="quiz-question">Which of the following is a better spot for camping? (10pt)</h4>
+    <div class="picture-multiple-choice-section">
+        <div class="picture-choice wrong-picture-choice">
+            <img src="{{ url_for('static', filename='image/question2-A.png') }}" alt="Image for A choice in question 2">
+            <div>A</div>
+        </div>
+        <div class="picture-choice correct-picture-choice">
+            <img src="{{ url_for('static', filename='image/question2-B.png') }}" alt="Image for B choice in question 2">
+            <div>B</div>
+        </div>
+    </div>
+    <div class="question-explanation">
+        Fold the tarp into the relative shape of the tent, but slightly smaller. You don't want any part of the tarp to hang out beyond the edge of the tent, otherwise it'll collect water underneath in case it rains. Thus C is correct.
+    </div>
+    <div class="next-question-section">
+        <a href="{{ url_for('q3') }}" class="btn btn-outline-dark next-question-button">Next Question</a>
+    </div>
+</div>
+{% endblock %}

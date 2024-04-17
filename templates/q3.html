@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'multiple_choice_page.js') }}"></script>
+<script>
+    
+</script>
+
+<div class="quiz-question-section">
+    <strong>3 / 10</strong>
+    <h4 class="quiz-question">How should the trap be sized and arranged in relation to the tent's footprint? (10pt)</h4>
+    <div class="quiz-image">
+        <img src="{{ url_for('static', filename='image/question3.jpg') }}" alt="Image for question 3">
+    </div>
+    <div class="multiple-choice-section">
+        <div class="choice wrong-choice">A) Larger than the tent to extend the living space</div>
+        <div class="choice wrong-choice">B) Same size as the tent to match its shape perfectly</div>
+        <div class="choice correct-choice">C) Smaller than the tent, with no part hanging out beyond the tent's edges</div>
+        <div class="choice wrong-choice">D) Cover only the area where the tent's entrance will be</div>
+    </div>
+    <div class="question-explanation">
+        Fold the tarp into the relative shape of the tent, but slightly smaller. You don't want any part of the tarp to hang out beyond the edge of the tent, otherwise it'll collect water underneath in case it rains. Thus C is correct.
+    </div>
+    <div class="next-question-section">
+        <a href="{{ url_for('q4') }}" class="btn btn-outline-dark next-question-button">Next Question</a>
+    </div>
+</div>
+{% endblock %}

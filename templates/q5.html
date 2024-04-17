@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'multiple_choice_page.js') }}"></script>
+<script>
+    
+</script>
+
+<div class="quiz-question-section">
+    <strong>5 / 10</strong>
+    <h4 class="quiz-question">What is the method for inserting tent poles to form the basic frame of the tent? (10pt)</h4>
+    <div class="quiz-image">
+        <img src="{{ url_for('static', filename='image/question4-5.jpg') }}" alt="Image for question 5">
+    </div>
+    <div class="multiple-choice-section">
+        <div class="choice wrong-choice">A) By laying them parallel to each other on either side of the tent</div>
+        <div class="choice wrong-choice">B) By forming a circle with the poles around the tent</div>
+        <div class="choice correct-choice">C) By crossing them over each other to form an X shape</div>
+        <div class="choice wrong-choice">D) By assembling them into a square frame outside the tent</div>
+    </div>
+    <div class="question-explanation">
+        Most basic tents will have two tent poles that cross each other to form an X that will form the basic frame of the tent. Thus C is correct.
+    </div>
+    <div class="next-question-section">
+        <a href="{{ url_for('q6') }}" class="btn btn-outline-dark next-question-button">Next Question</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,8 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-<h2>Click to learn how to set up a tent</h2>
-<a href="{{ url_for('learn') }}">
-    <img src="{{ url_for('static', filename='image/home.png') }}" alt="picture of tent" class = "centered-image">
-</a> 
-<!-- <button onclick="location.href='{{ url_for('learn') }}';" class="start-button">Let's Start!</button> -->
+<div class="homepage">
+    <h1 class="top-mg bot-mg">Click to learn how to set up a tent</h1>
+    <a href="{{ url_for('learn') }}">
+        <img src="{{ url_for('static', filename='image/home.png') }}"
+            alt="picture of tent" class="centered-image">
+    </a>
+    <button onclick="location.href='{{ url_for('learn') }}';"
+        class="start-button">Let's Start!</button>
+</div>
+
 {% endblock %}

@@ -1,12 +1,63 @@
-h2{
+/* h2{
     text-align: center;
+} */
+
+.homepage{
+    text-align: center;
+    background-color: #FFF5E0;
+    height: 80vh;
+    width: 100%;
+}
+
+.start-button {
+    padding: 10px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #4793AF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
+.start-button:hover {
+    background-color: #1679AB;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+  
+.navbar {
+    background-color: #1a7480;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #dfdfdf;
 }
 
 img.centered-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; 
+    width: 60%; 
 }
 
 .part {
@@ -76,6 +127,10 @@ img.centered-image {
 
 .top-mg{
     margin-top: 30px;
+}
+
+.bot-mg{
+    margin-bottom: 20px;
 }
 
 .custom-list {

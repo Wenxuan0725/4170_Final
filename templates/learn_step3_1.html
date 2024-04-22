@@ -2,27 +2,30 @@
 
 {% block content %}
 
-<div class="row top-mg">
-  <div class="col-md-1"></div>
-  <div class="col-md-5">
-    <img src="{{ url_for('static', filename='image/part3.png') }}" alt="Lay out the tarp" class="img-fluid">
-  </div>
+<div class="row top-mg tips-title">
+  <div>Windy conditions</div>
+</div>
 
-  <div class="col-md-6">
-    <div class="border-start border-5 ms-3 ps-3">
-      <h3>Windy conditions</h3>
-      <ul class="custom-list">
-        <li class="custom-list-item">Dome style tents are more aerodynamic than traditional</li>
-        <li class="custom-list-item">Canvas and nylon are appropriate tent fabrics</li>
-        <li class="custom-list-item">More poles used and the more times poles intersect!</li>
-      </ul>
-    </div>
+<div class="row">
+  <img src="{{ url_for('static', filename='image/part3.png') }}"
+    alt="Lay out the tarp" class="img-fluid s5-img top-mg">
+</div>
+
+<div class="row tip-lst">
+  <div class="custom-list">
+    <div class="custom-list-item">• Dome style tents are more aerodynamic than
+      traditional</div>
+    <div class="custom-list-item">• Canvas and nylon are appropriate tent
+      fabrics</div>
+    <div class="custom-list-item">• More poles used and the more times poles
+      intersect!</div>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col text-start">
-      <a href="{{ url_for('learn_step3') }}" class="btn btn-outline-dark">Back to tips</a>
+    <a href="{{ url_for('learn_step3') }}" class="btn btn-outline-dark">Back to
+      tips</a>
   </div>
 </div>
 {% endblock %}

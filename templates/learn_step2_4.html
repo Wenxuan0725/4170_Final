@@ -2,32 +2,39 @@
 
 {% block content %}
 <div class="row mb-4">
-  <h4 class="col">Step 4: Insert into corresponding flaps in the tent</h4>
+  <div class="steps">Step 4: <div class="step-content">Insert into corresponding
+      flaps in the tent</div></div>
 </div>
 <div class="row">
   <div class="col-md-7">
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/H-TcPlc4KXA?si=u36DU8xZxKsg3lJZ&amp;start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="700" height="400"
+        src="https://www.youtube.com/embed/H-TcPlc4KXA?si=u36DU8xZxKsg3lJZ&amp;start=40"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
     </div>
   </div>
 
-  <div class="col-md-5">
-      <div class="border-start border-5 ms-3 ps-3">
-        <h4>Slide the pole through flaps on the tent's surface</h4>
-        <h4>Attach them to plastic clips along the top of the tent</h4>
-        <ul>
-            <li>Ensure two main poles cross each other in an X formation to create the basic frame</li>
-        </ul>
-    </div>
+  <div class="col-md-5 top-mg">
+        <h3>Notes</h3>
+        <div class="custom-list">
+          <div class="custom-list-item big-item">• Slide the pole through flaps on the tent's surface</div>
+          <div class="custom-list-item big-item">• Attach them to plastic clips along the top of the tent</div>
+          <div class="custom-list-item">• Ensure two main poles cross each other in an X formation</div>
+        </div>
   </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mt-4 top-mg">
   <div class="col text-start">
-      <a href="{{ url_for('learn_step2_3') }}" class="btn btn-outline-dark">Previous Step</a>
+    <a href="{{ url_for('learn_step2_3') }}"
+      class="btn btn-outline-dark">Previous Step</a>
   </div>
   <div class="col text-end">
-      <a href="{{ url_for('learn_step2_5') }}" class="btn btn-outline-dark">Next Step</a>
+    <a href="{{ url_for('learn_step2_5') }}" class="btn btn-outline-dark">Next
+      Step</a>
   </div>
 </div>
 {% endblock %}

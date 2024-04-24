@@ -8,7 +8,7 @@
     <span class="question-number">1 / 8</span>
     <span class="score-display">Score: {{ current_score }}/100</span>
   </div>
-    <h4 class="quiz-question">Order the steps to pitch a tent: (30pt)</h4>
+    <h4 class="quiz-question">Drag and drop images to order tent setup steps: (30pt)</h4>
     <div id="steps-to-order" class="steps-container">
         <!-- Add your draggable steps here -->
         <img id="step4" src="{{ url_for('static', filename='image/part2_4.jpg') }}" draggable="true" ondragstart="drag(event)" class="quiz_draggable">

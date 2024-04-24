@@ -123,6 +123,12 @@ img.centered-image {
     font-weight: 100;
 }
 
+.s2-img{
+    width: 580px;
+    height: 480px;
+    margin: auto;
+}
+
 .s5-img{
     width: 580px;
     height: auto;

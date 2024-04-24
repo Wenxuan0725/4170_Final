@@ -1,23 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="row mb-4">
-    <h4 class="col">Part 3: Connect your tent poles</h4>
+    <div class="steps">Step 3: <div class="step-content">Connect your tent poles</div></div>
 </div>
 
 <div class="row">
-    <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fEpGfQic7-c?si=Iw4FeeGYNrfb7h2R&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="col-md-7">
+        <div class="video-container">
+          <iframe width="700" height="400"
+            src="https://www.youtube.com/embed/fEpGfQic7-c?si=Iw4FeeGYNrfb7h2R&amp;start=12"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div class="col-md-6">
-        <!-- <img src="{{ url_for('static', filename='image/part2_3.jpg') }}" alt="Lay tent onto the tarp" class="img-fluid"> -->
-        <div class="border-start border-5 ms-3 ps-3">
-            <h4>Assemble the tent poles</h4>
-            <ul>
-                <li>Stretching and clicking poles into place</li>
-                <li>If they're numbered, match the numbers to assemble each pole correctly</li>
-            </ul>
-            <h4>Fit the ends of each pole into the eyelets at the tent's corners</h4>
+    <div class="col-md-5 top-mg">
+        <h3>Notes</h3>
+        <div class="custom-list">
+          <div class="custom-list-item big-item">• Assemble the tent poles</div>
+          <div class="custom-list-item">• Stretching and clicking poles into place</div>
+          <div class="custom-list-item">• If they're numbered, match the numbers to assemble each pole correctly</div>
+          <div class="custom-list-item big-item">• Fit the ends of each pole into the eyelets at the tent's corners</div>
         </div>
     </div>
 </div>

@@ -1,22 +1,25 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="row mb-4">
-    <h4 class="col">Part 1: Lay a tarp</h4>
+    <div class="steps">Step 1: <div class="step-content">Lay a tarp</div></div>
 </div>
 
 <div class="row">
     <div class="col-md-6">
-        <img src="{{ url_for('static', filename='image/part2_1.png') }}" alt="Lay out the tarp" class="img-fluid">
+        <img src="{{ url_for('static', filename='image/part2_1.png') }}" alt="Lay out the tarp" class="img-fluid s5-img">
     </div>
 
-    <div class="col-md-6">
-        <div class="border-start border-5 ms-3 ps-3">
-            <h4>Place a plastic or vinyl tarp on the ground</h4>
-            <p>A barrier between the tent and the soil to prevent moisture from seeping in.</p>
-            <h4>Fold the tarp to ensure it's slightly smaller than the tent's footprint</h4>
-            <p>Prevents any part of the tarp from extending beyond the tent's edges, avoiding water accumulation underneath during rain.</p>
+    <div class="col-md-5 top-mg">
+        <h3>Notes</h3>
+        <div class="custom-list">
+          <div class="custom-list-item big-item">• Place a plastic or vinyl tarp on the ground</div>
+          <div class="custom-list-item">• A barrier between the tent and the soil</div>
+          <div class="custom-list-item">• Prevent moisture from seeping in</div>
+          <div class="custom-list-item big-item">• Ensure the tarp is slightly smaller than the tent's footprint</div>
+          <div class="custom-list-item">• Prevents the tarp from extending beyond the tent's edges</div>
+          <div class="custom-list-item">• Avoiding water accumulation underneath during rain</div>
         </div>
-    </div>
+  </div>
 </div>
 
 <div class="row mt-4">

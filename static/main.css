@@ -261,6 +261,7 @@ img.centered-image {
 
 .quiz-question {
     margin-top: 10px;
+    font-size: 30px;
 }
 
 .quiz-image img {
@@ -307,9 +308,11 @@ img.centered-image {
 }
 
 .question-explanation {
-    font-size: 19px;
+    font-size: 22px;
     margin-top: 30px;
     display: none;
+    color: rgb(108, 107, 107);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .picture-multiple-choice-section {
@@ -452,6 +455,7 @@ img.centered-image {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    color: rgb(104, 103, 103)
 }
 
 .question-number {
